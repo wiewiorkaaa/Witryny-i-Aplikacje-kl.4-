@@ -1,0 +1,13 @@
+1.Podaj przykład selektora prostego dla elementu <span> z jedną dowolną regułą CSS
+
+
+2. Podaj definicję stylu CSS, który wyjustuje tekst we wszystkich elementach <td>
+
+
+3*. Napisz definicję stylu CSS, który ustawi tło na żółte w komórce <td> z id="today"
+
+
+4. Napisz definicję stylu CSS, który ustawi zielone tło wszystkim elementom <p> wewnątrz <div> na dowolnym poziomie
+
+
+5. Napisz definicję stylu CSS, który ustawi czerwoną czcionkę wszystkim elementom <div> wewnątrz <body>, ale tylko na pierwszym poziomie zagnieżdżenia
