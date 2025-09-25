@@ -41,18 +41,18 @@ Selektor klasy (ogólny znak to .)
 Selektor identyfikatora (ogólny znak to #)
 <style>
     div#success {
-        color:                        -> zastosuje sie gdy bedzie np. <div id="success"             /BEZ NP. DIV PRZED # TO STOSUJE SIE DO KAŻDEGO/
+        color:                        -> zastosuje sie gdy bedzie np. <div id="success"        /BEZ NP. DIV PRZED # TO STOSUJE SIE DO KAŻDEGO/ //MOŻNA TYLKO JEDNO ID NA STRONE//
     }
 </style>
 
 ==============================================================================================================================================================================
 
-Selektor pseudoklasy (ogólny znak to :)
+Selektor pseudoklasy (ogólny znak to :)    :link    :visited    :hover
 
 ==============================================================================================================================================================================
 
-Selektor pseudoelementy (ogólny znak to ::)      p::first-letter -> przy <p> pierwsza litera bedzie ...... 
+Selektor pseudoelementy (ogólny znak to ::)      p::first-letter -> przy <p> pierwsza litera bedzie ......    ::first-line   ::selection
 
 ==============================================================================================================================================================================
 
-Selektor pseudoelementy (ogólny znak to [])
+Selektor atrybutu (ogólny znak to [])              
