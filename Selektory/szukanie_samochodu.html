@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
     <style>
         table {
@@ -16,20 +17,63 @@
             border-left: solid 3px blueviolet;
             padding: 10px 20px;
         }
+
     </style>
 <body>
     <table>
         <tr>
-            <td><label for="marka">Marka:</label><input type="text" id="marka" name="marka" required></td>
-            <td rowspan="2"></td>
-            <td></td>
-            <td></td>
-            <td rowspan="2"></td>
+            <td>
+                <label for="marka">Marka:<span style="color: red;">*</span> </label>
+                <input type="text" id="marka" name="marka" required>
+            </td>
+            <td rowspan="2">
+                <label for="nadowozie">Typ nadwozia:<span style="color: red;">*</span> </label>
+                <select id="nadwozie" name="nadwozie"size="5" multiple>
+                    <option value="Coupe">Coupé</option>
+                    <option value="hatchback">Hatchback</option>
+                    <option value="kabriolet">Kabriolet</option>
+                    <option value="kombi">Kombi</option>
+                    <option value="sedan">Sedan</option>
+                </select>
+            </td>
+            <td>
+                <label for="rok_prod">Miesiąc i rok produkcji:  </label>
+                <input type="month" id="rok_prod" name="rok_prd">
+            <br> <br>
+                
+            </td>
+            <td>
+                <label>Przebieg: </label>
+                <input type="range" min="25000" max="250000" step="25000" value="0" oninput="out1.value = this.value">
+                <output id="out1">25000</output>
+            </td>
+            <td rowspan="2">
+                <button type="submit">Szukaj</button>
+            </td>
         </tr>
+
+
+
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                <label for="model">Model: </label>
+                <input type="text" id="model" name="model" required>
+            </td>
+            <td> 
+                <label for="paliwo">Rodzaj paliwa: </label>
+                <select id="paliwo" name="paliwo">
+                    <option value="benz">Benzyna</option>
+                    <option value="benz_i_ele">Benzyna + elektryk</option>
+                    <option value="benz_i_gaz">Benzyna + gaz</option>
+                    <option value="ele">Elektryk</option>
+                    <option value="diesel">Diesel</option>
+                </select>
+            </td>
+            <td>
+                <label>Cena do:</label>
+                <input type="range" min="2000" max="500000" step="1000" value="0" oninput="out2.value = this.value">
+                <output id="out2">2000</output>
+            </td>
         </tr>
     </table>
 </body>
