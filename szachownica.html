@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         table {
+            border-collapse: collapse;
+            font-family: Arial;
+            text-align: center;
+            margin: auto;
+        }
+
+        td { 
+            border: solid 2px black;
+        }
+
+        td.zewnatrz_norm {
+            font-weight: bold;
+            font-size: 1em;
+            height: 17px;
+            width: 17px;
+        }
+        td.zewnatrz_odwr {
+            font-weight: bold;
+            font-size: 1em;
+            height: 17px;
+            width: 17px;
+            transform: rotate(180deg);
+        }
+        td.pole_czarne {
+            font-size: 3em;
+            background-color: dimgray;
+            height: 70px;
+            width: 70px;
+        }
+        td.pole_zolte {
+            font-size: 3em;
+            background-color: ivory;
+            height: 70px;
+            width: 70px;
+        }
+        td#szach_odwr {
+            color: black;
+            transform: rotate(180deg);
+            text-shadow: 0 0 3px white;
+        }
+        td#szach_norm{
+            color: white;
+            text-shadow: 0 0 3px black;
+        }
+    </style>
+
+</head>
+<body>
+    <table>
+            <tr>
+                <td></td>
+                <td class="zewnatrz_odwr"> a </td>
+                <td class="zewnatrz_odwr"> b </td>
+                <td class="zewnatrz_odwr"> c </td>
+                <td class="zewnatrz_odwr"> d </td>
+                <td class="zewnatrz_odwr"> e </td>
+                <td class="zewnatrz_odwr"> f </td>
+                <td class="zewnatrz_odwr"> g </td>
+                <td class="zewnatrz_odwr"> h </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="zewnatrz_norm"> 8 </td>
+                <td class="pole_zolte" id="szach_odwr"> ♜ </td>
+                <td class="pole_czarne" id="szach_odwr"> ♞ </td>
+                <td class="pole_zolte" id="szach_odwr"> ♝ </td>
+                <td class="pole_czarne" id="szach_odwr"> ♛ </td>
+                <td class="pole_zolte" id="szach_odwr"> ♚ </td>
+                <td class="pole_czarne" id="szach_odwr"> ♝ </td>
+                <td class="pole_zolte" id="szach_odwr"> ♞  </td>
+                <td class="pole_czarne" id="szach_odwr"> ♜ </td>
+                <td class="zewnatrz_odwr"> 8 </td>
+            </tr>
+            <tr>
+                <td class="zewnatrz_norm"> 7 </td>
+                <td class="pole_czarne" id="szach_odwr"> ♟ </td>
+                <td class="pole_zolte" id="szach_odwr"> ♟ </td>
+                <td class="pole_czarne" id="szach_odwr"> ♟ </td>
+                <td class="pole_zolte" id="szach_odwr"> ♟ </td>
+                <td class="pole_czarne" id="szach_odwr"> ♟ </td>
+                <td class="pole_zolte" id="szach_odwr"> ♟ </td>
+                <td class="pole_czarne" id="szach_odwr"> ♟ </td>
+                <td class="pole_zolte" id="szach_odwr"> ♟ </td>
+                <td class="zewnatrz_odwr"> 7 </td>
+            </tr>
+            <tr>
+                <td class="zewnatrz_norm"> 6 </td>
+                <td class="pole_zolte"></td>
+                <td class="pole_czarne"></td>
+                <td class="pole_zolte"></td>
+                <td class="pole_czarne"></td>
+                <td class="pole_zolte"></td>
+                <td class="pole_czarne"></td>
+                <td class="pole_zolte"></td>
+                <td class="pole_czarne"></td>
+                <td class="zewnatrz_odwr"> 6 </td>
+            </tr>
+            <tr>
+                <td class="zewnatrz_norm"> 5 </td>
+                <td class="pole_czarne"></td>
+                <td class="pole_zolte"></td>
+                <td class="pole_czarne"></td>
+                <td class="pole_zolte"></td>
+                <td class="pole_czarne"></td>
+                <td class="pole_zolte"></td>
+                <td class="pole_czarne"></td>
+                <td class="pole_zolte"></td>
+                <td class="zewnatrz_odwr"> 5 </td>
+            </tr>
+            <tr>
+                <td class="zewnatrz_norm"> 4 </td>
+                <td class="pole_zolte"></td>
+                <td class="pole_czarne"></td>
+                <td class="pole_zolte"></td>
+                <td class="pole_czarne"></td>
+                <td class="pole_zolte"></td>
+                <td class="pole_czarne"></td>
+                <td class="pole_zolte"></td>
+                <td class="pole_czarne"></td>
+                <td class="zewnatrz_odwr"> 4 </td>
+            </tr>
+            <tr>
+                <td class="zewnatrz_norm"> 3 </td>
+                <td class="pole_czarne"></td>
+                <td class="pole_zolte"></td>
+                <td class="pole_czarne"></td>
+                <td class="pole_zolte"></td>
+                <td class="pole_czarne"></td>
+                <td class="pole_zolte"></td>
+                <td class="pole_czarne"></td>
+                <td class="pole_zolte"></td>
+                <td class="zewnatrz_odwr"> 3 </td>
+            </tr>
+            <tr>
+                <td class="zewnatrz_norm"> 2 </td>
+                <td class="pole_zolte" id="szach_norm"> ♙ </td>
+                <td class="pole_czarne" id="szach_norm"> ♙ </td>
+                <td class="pole_zolte" id="szach_norm"> ♙ </td>
+                <td class="pole_czarne" id="szach_norm"> ♙ </td>
+                <td class="pole_zolte" id="szach_norm"> ♙ </td>
+                <td class="pole_czarne" id="szach_norm"> ♙ </td>
+                <td class="pole_zolte" id="szach_norm"> ♙ </td>
+                <td class="pole_czarne" id="szach_norm"> ♙ </td>
+                <td class="zewnatrz_odwr"> 2 </td>
+            </tr>
+            <tr>
+                <td class="zewnatrz_norm"> 1 </td>
+                <td class="pole_czarne" id="szach_norm"> ♖ </td>
+                <td class="pole_zolte" id="szach_norm"> ♘ </td>
+                <td class="pole_czarne" id="szach_norm"> ♗ </td>
+                <td class="pole_zolte" id="szach_norm"> ♕ </td>
+                <td class="pole_czarne" id="szach_norm"> ♔ </td>
+                <td class="pole_zolte" id="szach_norm"> ♗ </td>
+                <td class="pole_czarne" id="szach_norm"> ♘ </td>
+                <td class="pole_zolte" id="szach_norm"> ♖ </td>
+                <td class="zewnatrz_odwr"> 1 </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="zewnatrz_norm"> a </td>
+                <td class="zewnatrz_norm"> b </td>
+                <td class="zewnatrz_norm"> c </td>
+                <td class="zewnatrz_norm"> d </td>
+                <td class="zewnatrz_norm"> e </td>
+                <td class="zewnatrz_norm"> f </td>
+                <td class="zewnatrz_norm"> g </td>
+                <td class="zewnatrz_norm"> h </td>
+                <td></td>
+            </tr>
+    </table>
+</body>
+</html>
