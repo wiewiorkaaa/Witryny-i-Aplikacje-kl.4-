@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stołówka</title>
+</head>
+
+<style>
+    *{
+        font-family: Century,serif;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #baner {
+    background-color: #CCA10B;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-style: italic;
+    }
+
+    #baner img {
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+    }
+
+    .lewa {
+    background-color: rgba(5, 160, 88, 0.8);
+    width: 70%;
+    height: 620px;
+    padding: 10px;
+    text-align: left;
+}
+
+    .lewa article {
+    margin-bottom: 20px;
+}
+
+    .lewa img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    margin-left: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.lewa img:hover {
+    border: 3px solid #000;
+}
+
+.prawa {
+    background-color: rgba(5, 160, 88, 0.8);
+    width: 30%;
+    height: 600px;
+    padding-top: 20px;
+    font-family: "Lucida Console", "Consolas", "Courier New", monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.lewa, .prawa {
+    background-color: rgba(5, 160, 88, 0.8);
+}
+</style>
+
+<body>
+    <header id="baner"> 
+        <img src="baner1.jpg" alt="grafika z logiem">
+        <span style="background-color: #CCA10B; color: white; font-style: italic; margin: 10px; text-align: center;">Stołówka</span>
+        <img src="baner2.jpg" alt="grafika z logiem">
+    </header>
+    <section class="lewa">
+        <article>
+            <h1>Zupy</h1>
+            <img src="pomidorowa.png" alt="zupa pomidorowa" title="zupa pomidorowa">
+            <img src="ogorkowa.png" alt="zupa ogórkowa" title="zupa ogórkowa">
+        </article>
+        <article>
+            <h1>II danie</h1>
+            <img src="zestaw1.png" alt="zestaw dnia" title="zestaw dnia">
+            <img src="nalesniki.png" alt="naleśniki" title="naleśniki">
+            <img src="placki.png" alt="placki ziemniaczane" title="placki ziemniaczane">
+        </article>
+        <article>
+            <h1>Dodatki</h1>
+            <img src="kompot.png" alt="kompot" title="kompot">
+        </article>
+    </section>
+    <section class="prawa">
+        <label for="podsumowanie">Podsumowanie:</label>
+        <p id="podsumowanie">To jest dynamicznie generowany tekst...</p>
+    </section>
+    <footer></footer>
+</body>
+
+</html>
