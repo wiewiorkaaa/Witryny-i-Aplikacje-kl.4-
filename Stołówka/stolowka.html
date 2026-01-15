@@ -8,8 +8,8 @@
 </head>
 
 <style>
-    *{
-        font-family: Century,serif;
+    * {
+        font-family: Century, serif;
     }
 
     body {
@@ -18,65 +18,73 @@
     }
 
     #baner {
-    background-color: #CCA10B;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    font-style: italic;
+        background-color: #CCA10B;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        font-style: italic;
     }
 
     #baner img {
-    display: inline-block;
-    margin: 10px;
-    vertical-align: middle;
-    width: auto;
-    height: auto;
+        display: inline-block;
+        margin: 10px;
+        vertical-align: middle;
+        width: auto;
+        height: auto;
     }
 
     .lewa {
-    background-color: rgba(5, 160, 88, 0.8);
-    width: 70%;
-    height: 620px;
-    padding: 10px;
-    text-align: left;
-}
+        width: 70%;
+        height: 620px;
+        text-align: left;
+        padding: 10px;
+    }
 
     .lewa article {
-    margin-bottom: 20px;
-}
+        margin-bottom: 20px;
+    }
 
     .lewa img {
-    height: 100px;
-    width: 100px;
-    margin: 10px;
-    margin-left: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-}
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        margin-left: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    }
 
-.lewa img:hover {
-    border: 3px solid #000;
-}
+    .lewa img:hover {
+        border: 3px solid #000;
+    }
 
-.prawa {
-    background-color: rgba(5, 160, 88, 0.8);
-    width: 30%;
-    height: 600px;
-    padding-top: 20px;
-    font-family: "Lucida Console", "Consolas", "Courier New", monospace;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
+    .prawa {
+        width: 30%;
+        height: 600px;
+        padding-top: 20px;
+        font-family: "Lucida Console", "Consolas", "Courier New", monospace;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
 
-.lewa, .prawa {
-    background-color: rgba(5, 160, 88, 0.8);
-}
+    .lewa,
+    .prawa {
+        background-color: rgba(5, 160, 88, 0.8);
+    }
+
+    footer {
+        background-color: #CCA10B;
+        color: white;
+        font-style: italic;
+        padding: 5px;
+        text-align: center;
+    }
 </style>
 
 <body>
-    <header id="baner"> 
+    <header id="baner">
         <img src="baner1.jpg" alt="grafika z logiem">
-        <span style="background-color: #CCA10B; color: white; font-style: italic; margin: 10px; text-align: center;">Stołówka</span>
+        <span
+            style="background-color: #CCA10B; color: white; font-style: italic; margin: 10px; text-align: center;">Stołówka</span>
         <img src="baner2.jpg" alt="grafika z logiem">
     </header>
     <section class="lewa">
@@ -97,10 +105,10 @@
         </article>
     </section>
     <section class="prawa">
-        <label for="podsumowanie">Podsumowanie:</label>
-        <p id="podsumowanie">To jest dynamicznie generowany tekst...</p>
-    </section>
-    <footer></footer>
+            <label>Podsumowanie:</label>
+            <p id="podsumowanie"></p>
+        </section>
+    <footer> <p>Stronę wykonał: 123456</p> </footer>
 </body>
 
 </html>
