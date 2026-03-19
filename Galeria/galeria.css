@@ -5,10 +5,14 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 .container {
     display: flex;
-    min-height: 100vh;
+    min-height: 5000px;
     font-family: Georgia, 'Times New Roman', serif;
 }
 
@@ -63,16 +67,8 @@
     color: #222;
 }
 
-.gallery img {
-    width: 32%;
-    height: 260px;
-    object-fit: cover;
-    display: block;
-    transition: 0.3s ease;
-}
-
 .gallery img:hover {
-    filter: brightness(40%);
+    filter: brightness(30%);
 }
 
 .zdjecie {
@@ -85,7 +81,7 @@
     height: 260px;
     object-fit: cover;
     display: block;
-    transition: 0.3s;
+    transition: 0.8s;
 }
 
 .zdjecie span {
@@ -97,8 +93,29 @@
     font-size: 22px;
     font-weight: bold;
     opacity: 0;
+    transition: 2.3s;
 }
 
 .zdjecie:hover span {
     opacity: 1;
+}
+
+.scroll-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.scroll-buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: #e6e6e6;
 }
