@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Pylon stacji paliw</title>
+<style>
+    body {
+        background: #e6e6e6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+    }
+
+    .pylon {
+        width: 180px;
+        background: #d60000;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        overflow: hidden;
+    }
+
+    .top {
+        padding: 20px 10px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        border-bottom: 4px solid #b30000;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        background: white;
+        border-radius: 50%;
+        margin: 0 auto 10px;
+        position: relative;
+    }
+
+    .logo::after {
+        content: "";
+        width: 20px;
+        height: 30px;
+        background: #0077cc;
+        border-radius: 50% 50% 50% 50%;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .section-title {
+        background: #cfcfcf;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    .price-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #ff1a1a;
+        margin: 5px 10px;
+        padding: 10px;
+        color: white;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .fuel {
+        background: white;
+        color: black;
+        padding: 3px 6px;
+        border-radius: 3px;
+        font-size: 12px;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        background: #d60000;
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
+        background: #0077cc;
+        border-radius: 50%;
+    }
+
+    .payments {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        background: #fff;
+    }
+
+    .pay {
+        width: 40px;
+        height: 25px;
+        background: #ccc;
+        border-radius: 3px;
+    }
+
+    .bottom {
+        height: 40px;
+        background: linear-gradient(#d60000, #800000);
+    }
+</style>
+</head>
+<body>
+
+<div class="pylon">
+    <div class="top">
+        <div class="logo"></div>
+        DELTA OIL
+    </div>
+
+    <div class="section-title">SKLEP</div>
+
+    <div class="price-row">
+        <span class="fuel">95</span>
+        <span>6.60</span>
+    </div>
+
+    <div class="price-row">
+        <span class="fuel">ON</span>
+        <span>6.60</span>
+    </div>
+
+    <div class="price-row">
+        <span class="fuel">98</span>
+        <span>6.60</span>
+    </div>
+
+    <div class="price-row">
+        <span class="fuel">LPG</span>
+        <span>6.60</span>
+    </div>
+
+    <div class="icons">
+        <div class="icon"></div>
+        <div class="icon"></div>
+        <div class="icon"></div>
+    </div>
+
+    <div class="payments">
+        <div class="pay"></div>
+        <div class="pay"></div>
+        <div class="pay"></div>
+    </div>
+
+    <div class="bottom"></div>
+</div>
+
+</body>
+</html>

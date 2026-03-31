@@ -1,0 +1,97 @@
+body {
+        background: #e6e6e6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+    }
+
+.pylon {
+        width: 180px;
+        background: #d60000;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+.top {
+        padding: 20px 10px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        border-bottom: 4px solid #b30000;
+        background: linear-gradient(#800000, #d60000)
+    }
+
+.tittle1 {
+        background: #cfcfcf;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        height: 20px;
+    }
+
+.tittle2 {
+    border-top: 4px solid #b30000;
+        background: #d60000;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        height: 20px;
+    }
+
+.cena {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #ff1a1a;
+        margin: 5px 10px;
+        padding: 10px;
+        color: white;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+.paliwo {
+        background: white;
+        color: black;
+        padding: 3px 6px;
+        border-radius: 3px;
+        font-size: 12px;
+    }
+
+.ikony {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        background: #d60000;
+    }
+
+.ikona {
+        width: 25px;
+        height: 25px;
+        background: #0077cc;
+        border-radius: 50%;
+    }
+
+.platnosci {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        background: #fff;
+    }
+
+.platnosc {
+        width: 40px;
+        height: 25px;
+        background: #ccc;
+        border-radius: 3px;
+    }
+
+.bottom {
+        height: 40px;
+        background: linear-gradient(#d60000, #800000);
+    }

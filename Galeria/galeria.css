@@ -100,13 +100,13 @@ html {
     opacity: 1;
 }
 
-.scroll-buttons {
+.przycisk {
     position: fixed;
     right: 20px;
     bottom: 20px;
 }
 
-.scroll-buttons a {
+.przycisk a {
     display: flex;
     justify-content: center;
     align-items: center;
